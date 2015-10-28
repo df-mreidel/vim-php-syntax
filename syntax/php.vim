@@ -618,7 +618,7 @@ else
 endif
 
 syntax match  phpDocCustomTags  "@[a-zA-Z]*\>" containedin=phpComment,phpDocComment
-syntax region phpDocTags  start="{@\(example\|id\|internal\|inheritdoc\|link\|source\|toc\|tutorial\)" end="}" containedin=phpDocComment
+syntax region phpDocTags  start="{@\(example\|id\|internal\|inheritdoc\|link\|source\|toc\|tutorial\|code\)" end="}" containedin=phpDocComment
 syntax match  phpDocTags  "@\(abstract\|access\|author\|category\|copyright\|deprecated\|example\|final\|global\|ignore\|internal\|license\|link\|method\|name\|package\|param\|property\|return\|see\|since\|static\|staticvar\|subpackage\|tutorial\|uses\|var\|version\|contributor\|modified\|filename\|description\|filesource\|throws\)\>" containedin=phpDocComment
 syntax match  phpDocTodo  "@\(todo\|fixme\|xxx\)\>.*" containedin=phpComment,phpDocComment
 
